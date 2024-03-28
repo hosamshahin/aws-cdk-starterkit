@@ -5,6 +5,8 @@
     ".github/pull_request_template.md",
     ".github/workflows/build.yml",
     ".github/workflows/cdk-deploy-dev.yml",
+    ".github/workflows/cdk-deploy-production.yml",
+    ".github/workflows/cdk-deploy-staging.yml",
     ".github/workflows/cdk-deploy-test.yml",
     ".github/workflows/pull-request-lint.yml",
     ".github/workflows/release.yml",

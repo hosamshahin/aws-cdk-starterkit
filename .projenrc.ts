@@ -92,10 +92,10 @@ project.tasks.addEnvironment('CDK_DEFAULT_REGION', awsRegion);
 // Define the target AWS accounts for the different environments
 type Environment = 'dev' | 'test' | 'staging' | 'production';
 const targetAccounts: Record<Environment, string | undefined> = {
-  dev: '987654321012',
-  test: '123456789012',
-  staging: undefined,
-  production: undefined,
+  dev: '690901106489',
+  test: '864571753663',
+  staging: '787236266800',
+  production: '938711853848',
 };
 
 /* Add npm run commands that you can use to deploy to each environment

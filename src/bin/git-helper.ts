@@ -1,7 +1,7 @@
 import { execSync } from 'node:child_process';
 
 export function getGitRepoDetails(): { gitOwner: string; repoName: string } {
-  const gitRemoteUrl = execSync('git config --get remote.origin.url').toString().trim();
+  const gitRemoteUrl = execSync('git config --get remote.github.url').toString().trim();
   const urlPattern = /(?:git@|https:\/\/)([\w\.@:]+)[\/:]([\w,.,-]+)\/([\w,.,-]+?)(\.git)?$/;
   const match = gitRemoteUrl.match(urlPattern);
 
