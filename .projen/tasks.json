@@ -232,58 +232,6 @@
       "name": "pre-compile",
       "description": "Prepare the project for compilation"
     },
-    "production:deploy": {
-      "name": "production:deploy",
-      "description": "Deploy the stacks on the PRODUCTION account",
-      "env": {
-        "CDK_DEFAULT_ACCOUNT": "938711853848",
-        "ENVIRONMENT": "production"
-      },
-      "steps": [
-        {
-          "exec": "cdk deploy --require-approval never *Stack-production"
-        }
-      ]
-    },
-    "production:destroy": {
-      "name": "production:destroy",
-      "description": "Destroy the stacks on the PRODUCTION account",
-      "env": {
-        "CDK_DEFAULT_ACCOUNT": "938711853848",
-        "ENVIRONMENT": "production"
-      },
-      "steps": [
-        {
-          "exec": "cdk destroy --force *Stack-production"
-        }
-      ]
-    },
-    "production:diff": {
-      "name": "production:diff",
-      "description": "Diff the stacks on the PRODUCTION account",
-      "env": {
-        "CDK_DEFAULT_ACCOUNT": "938711853848",
-        "ENVIRONMENT": "production"
-      },
-      "steps": [
-        {
-          "exec": "cdk diff --require-approval never *Stack-production"
-        }
-      ]
-    },
-    "production:synth": {
-      "name": "production:synth",
-      "description": "Synth the stacks on the PRODUCTION account",
-      "env": {
-        "CDK_DEFAULT_ACCOUNT": "938711853848",
-        "ENVIRONMENT": "production"
-      },
-      "steps": [
-        {
-          "exec": "cdk synth"
-        }
-      ]
-    },
     "release": {
       "name": "release",
       "description": "Prepare a release from \"main\" branch",
@@ -305,58 +253,6 @@
         },
         {
           "exec": "git diff --ignore-space-at-eol --exit-code"
-        }
-      ]
-    },
-    "staging:deploy": {
-      "name": "staging:deploy",
-      "description": "Deploy the stacks on the STAGING account",
-      "env": {
-        "CDK_DEFAULT_ACCOUNT": "787236266800",
-        "ENVIRONMENT": "staging"
-      },
-      "steps": [
-        {
-          "exec": "cdk deploy --require-approval never *Stack-staging"
-        }
-      ]
-    },
-    "staging:destroy": {
-      "name": "staging:destroy",
-      "description": "Destroy the stacks on the STAGING account",
-      "env": {
-        "CDK_DEFAULT_ACCOUNT": "787236266800",
-        "ENVIRONMENT": "staging"
-      },
-      "steps": [
-        {
-          "exec": "cdk destroy --force *Stack-staging"
-        }
-      ]
-    },
-    "staging:diff": {
-      "name": "staging:diff",
-      "description": "Diff the stacks on the STAGING account",
-      "env": {
-        "CDK_DEFAULT_ACCOUNT": "787236266800",
-        "ENVIRONMENT": "staging"
-      },
-      "steps": [
-        {
-          "exec": "cdk diff --require-approval never *Stack-staging"
-        }
-      ]
-    },
-    "staging:synth": {
-      "name": "staging:synth",
-      "description": "Synth the stacks on the STAGING account",
-      "env": {
-        "CDK_DEFAULT_ACCOUNT": "787236266800",
-        "ENVIRONMENT": "staging"
-      },
-      "steps": [
-        {
-          "exec": "cdk synth"
         }
       ]
     },

@@ -94,8 +94,8 @@ type Environment = 'dev' | 'test' | 'staging' | 'production';
 const targetAccounts: Record<Environment, string | undefined> = {
   dev: '690901106489',
   test: '864571753663',
-  staging: '787236266800',
-  production: '938711853848',
+  staging: undefined,
+  production: undefined,
 };
 
 /* Add npm run commands that you can use to deploy to each environment
